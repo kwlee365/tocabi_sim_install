@@ -29,7 +29,7 @@ sudo apt install -y cmake g++ libeigen3-dev libyaml-cpp-dev libjsoncpp-dev qtbas
 # Create catkin workspace and clone necessary repositories
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-git clone --recurse-submodules https://github.com/saga0619/dyros_tocabi_v2
+git clone --recurse-submodules https://github.com/kwlee365/dyros_tocabi_v2
 git clone https://github.com/saga0619/tocabi_cc
 git clone https://github.com/saga0619/tocabi_avatar
 git clone https://github.com/saga0619/tocabi_gui
@@ -40,7 +40,7 @@ mkdir -p ~/lib && cd ~/lib
 
 # Install RBDL
 echo "[Installing RBDL...]"
-git clone https://github.com/saga0619/rbdl-orb
+git clone --recursive https://github.com/saga0619/rbdl-orb
 cd rbdl-orb
 mkdir build && cd build
 cmake ..
