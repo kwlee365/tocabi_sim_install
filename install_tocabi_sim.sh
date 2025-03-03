@@ -29,11 +29,11 @@ sudo apt install -y cmake g++ libeigen3-dev libyaml-cpp-dev libjsoncpp-dev qtbas
 # Create catkin workspace and clone necessary repositories
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-git clone --recurse-submodules https://github.com/kwlee365/dyros_tocabi_v2
-git clone https://github.com/saga0619/tocabi_cc
-git clone https://github.com/saga0619/tocabi_avatar
-git clone https://github.com/saga0619/tocabi_gui
-git clone https://github.com/saga0619/mujoco_ros_sim
+git clone --recurse-submodules https://github.com/HumanoidWalkingControlHW/dyros_tocabi_v2.git
+git clone https://github.com/saga0619/tocabi_cc.git
+git clone https://github.com/HumanoidWalkingControlHW/tocabi_avatar.git
+git clone https://github.com/saga0619/tocabi_gui.git
+git clone https://github.com/saga0619/mujoco_ros_sim.git
 
 # Install required libraries manually instead of install_prereq.sh
 mkdir -p ~/lib && cd ~/lib
